@@ -1,76 +1,60 @@
+aid: junit
 name: JUnit
-description: A programmer-friendly testing framework for Java and the JVM
-image: https://junit.org/junit5/assets/img/junit5-logo.png
-url: https://junit.org/junit5/
-created: '2024'
-modified: '2024'
+description: >-
+  JUnit is a programmer-friendly testing framework for Java and the JVM.
+  JUnit 5 is the next generation of JUnit, composed of three modules:
+  JUnit Platform, JUnit Jupiter, and JUnit Vintage.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-- testing
-- java
-- unit testing
-- test automation
-- TDD
+  - Testing
+  - Java
+  - Unit Testing
+  - Test Automation
+  - TDD
+url: https://raw.githubusercontent.com/api-evangelist/junit/refs/heads/main/apis.yml
+created: '2024-01-01'
+modified: '2026-03-16'
+specificationVersion: '0.19'
 apis:
-- name: JUnit 5 (Jupiter)
-  description: The next generation of JUnit for Java 8 and beyond
-  image: https://junit.org/junit5/assets/img/junit5-logo.png
-  humanURL: https://junit.org/junit5/
-  baseURL: https://repo1.maven.org/maven2/org/junit/jupiter/
-  properties:
+  - aid: junit:junit5
+    name: JUnit 5 Jupiter
+    description: >-
+      The next generation of JUnit for Java 8 and beyond, providing an
+      expressive API for writing tests and extensions.
+    humanURL: https://junit.org/junit5/
+    tags:
+      - Testing
+      - Java
+    properties:
+      - type: Documentation
+        url: https://junit.org/junit5/docs/current/user-guide/
+      - type: Reference
+        url: https://junit.org/junit5/docs/current/api/
+      - type: Getting Started
+        url: https://junit.org/junit5/docs/current/user-guide/#overview-getting-started
+      - type: Change Log
+        url: https://junit.org/junit5/docs/current/release-notes/
+  - aid: junit:junit4
+    name: JUnit 4 Vintage
+    description: >-
+      The legacy version of JUnit still widely used in Java projects.
+    humanURL: https://junit.org/junit4/
+    tags:
+      - Testing
+      - Java
+    properties:
+      - type: Documentation
+        url: https://junit.org/junit4/
+      - type: Reference
+        url: https://junit.org/junit4/javadoc/latest/
+common:
+  - type: Website
+    url: https://junit.org/junit5/
   - type: Documentation
     url: https://junit.org/junit5/docs/current/user-guide/
-  - type: API Documentation
-    url: https://junit.org/junit5/docs/current/api/
-  - type: Getting Started
-    url: https://junit.org/junit5/docs/current/user-guide/#overview-getting-started
-  - type: GitHub Repository
-    url: https://github.com/junit-team/junit5
-  - type: Release Notes
-    url: https://junit.org/junit5/docs/current/release-notes/
-  - type: Maven Dependency
-    url: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
-  - type: Javadoc
-    url: https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/package-summary.html
-  contact:
-  - type: Twitter
-    url: https://twitter.com/junitteam
-  - type: Stack Overflow
-    url: https://stackoverflow.com/questions/tagged/junit5
-  - type: Gitter Chat
-    url: https://gitter.im/junit-team/junit5
-- name: JUnit 4 (Vintage)
-  description: The legacy version of JUnit, still widely used
-  humanURL: https://junit.org/junit4/
-  baseURL: https://repo1.maven.org/maven2/junit/junit/
-  properties:
-  - type: Documentation
-    url: https://junit.org/junit4/
-  - type: API Documentation
-    url: https://junit.org/junit4/javadoc/latest/
-  - type: GitHub Repository
-    url: https://github.com/junit-team/junit4
-  - type: Maven Dependency
-    url: https://mvnrepository.com/artifact/junit/junit
+  - type: GitHub Organization
+    url: https://github.com/junit-team
 maintainers:
-- name: JUnit Team
-  url: https://junit.org
-  email: team@junit.org
-include:
-- name: JUnit Pioneer
-  url: https://junit-pioneer.org/
-  description: Extension pack for JUnit 5
-- name: Mockito
-  url: https://site.mockito.org/
-  description: Mocking framework for unit tests in Java
-- name: AssertJ
-  url: https://assertj.github.io/doc/
-  description: Fluent assertions library for Java
-common:
-- type: Blog
-  url: https://junit.org/junit5/docs/current/user-guide/#overview-what-is-junit-5
-- type: License
-  url: https://github.com/junit-team/junit5/blob/main/LICENSE.md
-- type: Contributing Guide
-  url: https://github.com/junit-team/junit5/blob/main/CONTRIBUTING.md
-- type: Code of Conduct
-  url: https://github.com/junit-team/.github/blob/main/CODE_OF_CONDUCT.md
+  - FN: Kin Lane
+    email: kin@apievangelist.com
