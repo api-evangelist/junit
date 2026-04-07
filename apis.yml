@@ -7,11 +7,11 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Testing
   - Java
-  - Unit Testing
-  - Test Automation
   - TDD
+  - Test Automation
+  - Testing
+  - Unit Testing
 url: https://raw.githubusercontent.com/api-evangelist/junit/refs/heads/main/apis.yml
 created: '2024-01-01'
 modified: '2026-03-16'
@@ -24,8 +24,8 @@ apis:
       expressive API for writing tests and extensions.
     humanURL: https://junit.org/junit5/
     tags:
-      - Testing
       - Java
+      - Testing
     properties:
       - type: Documentation
         url: https://junit.org/junit5/docs/current/user-guide/
@@ -41,8 +41,8 @@ apis:
       The legacy version of JUnit still widely used in Java projects.
     humanURL: https://junit.org/junit4/
     tags:
-      - Testing
       - Java
+      - Testing
     properties:
       - type: Documentation
         url: https://junit.org/junit4/
