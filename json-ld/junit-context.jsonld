@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "ju": "https://raw.githubusercontent.com/api-evangelist/junit/main/json-ld/junit-context.jsonld#",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "TestSuite": "ju:TestSuite",
+    "TestCase": "ju:TestCase",
+    "TestResult": "ju:TestResult",
+    "TestFailure": "ju:TestFailure",
+    "TestError": "ju:TestError",
+    "tests": "ju:tests",
+    "failures": "ju:failures",
+    "errors": "ju:errors",
+    "skipped": "ju:skipped",
+    "time": "ju:time"
+  }
+}

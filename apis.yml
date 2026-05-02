@@ -14,7 +14,7 @@ tags:
   - Unit Testing
 url: https://raw.githubusercontent.com/api-evangelist/junit/refs/heads/main/apis.yml
 created: '2024-01-01'
-modified: '2026-03-16'
+modified: '2026-04-28'
 specificationVersion: '0.19'
 apis:
   - aid: junit:junit5
@@ -35,6 +35,10 @@ apis:
         url: https://junit.org/junit5/docs/current/user-guide/#overview-getting-started
       - type: Change Log
         url: https://junit.org/junit5/docs/current/release-notes/
+      - type: GitHub
+        url: https://github.com/junit-team/junit5
+      - type: JSONSchema
+        url: json-schema/junit-report-schema.json
   - aid: junit:junit4
     name: JUnit 4 Vintage
     description: >-
@@ -48,6 +52,8 @@ apis:
         url: https://junit.org/junit4/
       - type: Reference
         url: https://junit.org/junit4/javadoc/latest/
+      - type: GitHub
+        url: https://github.com/junit-team/junit4
 common:
   - type: Website
     url: https://junit.org/junit5/
@@ -55,6 +61,10 @@ common:
     url: https://junit.org/junit5/docs/current/user-guide/
   - type: GitHub Organization
     url: https://github.com/junit-team
+  - type: License
+    url: https://github.com/junit-team/junit5/blob/main/LICENSE.md
+  - type: JSON-LD
+    url: json-ld/junit-context.jsonld
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

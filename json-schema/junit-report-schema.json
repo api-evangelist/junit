@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/junit/main/json-schema/junit-report-schema.json",
+  "title": "JUnit Test Report",
+  "description": "JSON representation of a JUnit-style test report (testsuites/testsuite/testcase).",
+  "type": "object",
+  "required": ["testsuites"],
+  "properties": {
+    "testsuites": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "tests": { "type": "integer", "minimum": 0 },
+        "failures": { "type": "integer", "minimum": 0 },
+        "errors": { "type": "integer", "minimum": 0 },
+        "skipped": { "type": "integer", "minimum": 0 },
+        "time": { "type": "number", "minimum": 0 },
+        "testsuite": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "tests"],
+            "properties": {
+              "name": { "type": "string" },
+              "package": { "type": "string" },
+              "tests": { "type": "integer", "minimum": 0 },
+              "failures": { "type": "integer", "minimum": 0 },
+              "errors": { "type": "integer", "minimum": 0 },
+              "skipped": { "type": "integer", "minimum": 0 },
+              "time": { "type": "number", "minimum": 0 },
+              "timestamp": { "type": "string", "format": "date-time" },
+              "hostname": { "type": "string" },
+              "properties": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "value": { "type": "string" }
+                  }
+                }
+              },
+              "testcase": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["name"],
+                  "properties": {
+                    "name": { "type": "string" },
+                    "classname": { "type": "string" },
+                    "time": { "type": "number", "minimum": 0 },
+                    "skipped": {
+                      "type": "object",
+                      "properties": { "message": { "type": "string" } }
+                    },
+                    "failure": {
+                      "type": "object",
+                      "properties": {
+                        "message": { "type": "string" },
+                        "type": { "type": "string" },
+                        "text": { "type": "string" }
+                      }
+                    },
+                    "error": {
+                      "type": "object",
+                      "properties": {
+                        "message": { "type": "string" },
+                        "type": { "type": "string" },
+                        "text": { "type": "string" }
+                      }
+                    },
+                    "system-out": { "type": "string" },
+                    "system-err": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
