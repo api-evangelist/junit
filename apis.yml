@@ -31,9 +31,9 @@ apis:
         url: https://junit.org/junit5/docs/current/user-guide/
       - type: Reference
         url: https://junit.org/junit5/docs/current/api/
-      - type: Getting Started
+      - type: GettingStarted
         url: https://junit.org/junit5/docs/current/user-guide/#overview-getting-started
-      - type: Change Log
+      - type: ChangeLog
         url: https://junit.org/junit5/docs/current/release-notes/
       - type: GitHub
         url: https://github.com/junit-team/junit5
@@ -59,11 +59,11 @@ common:
     url: https://junit.org/junit5/
   - type: Documentation
     url: https://junit.org/junit5/docs/current/user-guide/
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/junit-team
   - type: License
     url: https://github.com/junit-team/junit5/blob/main/LICENSE.md
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/junit-context.jsonld
 maintainers:
   - FN: Kin Lane
